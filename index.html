@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Propuesta de Optimización de Bases de Datos – Auditoría y Rendimiento</title>
+  <title>Propuesta de Optimización de Bases de Datos – Plan Inicial</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <style>
@@ -16,7 +16,6 @@
       --accent2: #0f7ac4;
       --radius-lg: 18px;
       --shadow-soft: 0 4px 14px rgba(0,0,0,0.08);
-      --chip: #eef5ff;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -41,28 +40,23 @@
 
     .cover-page { display: flex; min-height: 420px; }
     .cover-stripe { width: 90px; background: linear-gradient(180deg, var(--accent), var(--accent2)); }
+
     .cover-main {
       flex: 1;
       padding: 44px 52px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      text-align: center;
       justify-content: center;
+      text-align: center;
     }
 
-    .cover-title { font-size: 30px; font-weight: 700; margin-bottom: 6px; }
-    .cover-subtitle { font-size: 18px; font-weight: 600; margin-bottom: 18px; color:#222; }
+    .cover-title { font-size: 30px; font-weight: 700; margin-bottom: 8px; }
+    .cover-subtitle { font-size: 18px; font-weight: 600; margin-bottom: 20px; color: #222; }
     .cover-meta { font-size: 14px; color: var(--text-muted); }
     .cover-footer { font-size: 11px; color: #777; margin-top: 30px; }
 
-    header {
-      display: flex;
-      align-items: center;
-      padding: 26px 36px;
-      border-bottom: 1px solid var(--border);
-    }
-
+    header { padding: 26px 36px; border-bottom: 1px solid var(--border); }
     main { padding: 28px 38px; }
 
     section {
@@ -99,19 +93,17 @@
     .price { font-weight: 800; }
 
     footer { padding: 0 38px 26px; }
-
   </style>
 </head>
 
 <body>
 
-<!-- PORTADA -->
 <div class="page">
   <div class="cover-page">
     <div class="cover-stripe"></div>
     <div class="cover-main">
       <div class="cover-title">Propuesta de Optimización</div>
-      <div class="cover-subtitle">Bases de Datos Productivas SQL Server</div>
+      <div class="cover-subtitle">Plan Inicial – Bases de Datos Productivas</div>
 
       <p class="cover-meta"><strong>Bases:</strong> auditoria / paclab</p>
       <p class="cover-meta"><strong>Proveedor:</strong> Consultoría TI – Bases de Datos</p>
@@ -121,11 +113,10 @@
   </div>
 </div>
 
-<!-- CONTENIDO -->
 <div class="page">
 
 <header>
-  <h1>Optimización y Estabilización de Bases Productivas</h1>
+  <h1>Plan Inicial – Optimización y Estabilización</h1>
 </header>
 
 <main>
@@ -133,29 +124,19 @@
 <section>
   <h2>Resumen Ejecutivo</h2>
   <p>
-    Se propone avanzar con la <strong>optimización y estabilización</strong> de las bases
-    <strong>auditoria</strong> y <strong>paclab</strong>, actualmente en producción,
-    enfocándose en mejorar rendimiento, estabilidad y consumo de recursos.
+    El <strong>Plan Inicial</strong> está orientado a mejorar el rendimiento y la estabilidad
+    de las bases productivas <strong>auditoria</strong> y <strong>paclab</strong>,
+    mediante optimización de consultas e índices críticos, sin afectar la operación diaria.
   </p>
 </section>
 
 <section>
-  <h2>Objetivo del Servicio</h2>
+  <h2>Alcance del Servicio</h2>
   <ul>
-    <li>Reducir tiempos de respuesta de consultas críticas.</li>
-    <li>Optimizar consumo de CPU, memoria e I/O.</li>
-    <li>Eliminar cuellos de botella por índices y queries.</li>
-    <li>Mejorar la estabilidad operativa.</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Alcance del Trabajo</h2>
-  <ul>
-    <li>Optimización de consultas críticas.</li>
+    <li>Optimización de consultas críticas existentes.</li>
     <li>Ajuste y creación de índices estratégicos.</li>
     <li>Eliminación de índices redundantes.</li>
-    <li>Ajustes de configuración seguros en entorno productivo.</li>
+    <li>Ajustes seguros en entorno productivo.</li>
     <li>Validación de mejoras aplicadas.</li>
   </ul>
 </section>
@@ -171,7 +152,7 @@
 </section>
 
 <section>
-  <h2>Presupuesto</h2>
+  <h2>Presupuesto – Plan Inicial</h2>
   <table>
     <tr>
       <th>Base de Datos</th>
@@ -181,16 +162,16 @@
     <tr>
       <td><strong>auditoria</strong></td>
       <td>Optimización de queries e índices productivos</td>
-      <td class="price">USD 400</td>
+      <td class="price">Gs. 2.200.000</td>
     </tr>
     <tr>
       <td><strong>paclab</strong></td>
       <td>Optimización de queries e índices productivos</td>
-      <td class="price">USD 400</td>
+      <td class="price">Gs. 2.200.000</td>
     </tr>
     <tr>
       <th colspan="2">Total General</th>
-      <th class="price">USD 800</th>
+      <th class="price">Gs. 4.400.000</th>
     </tr>
   </table>
 </section>
@@ -199,14 +180,14 @@
   <h2>Plazos</h2>
   <ul>
     <li>Duración estimada: <strong>2 días hábiles</strong>.</li>
-    <li>Implementación sin interrupción del servicio.</li>
+    <li>Implementación sin interrupciones.</li>
   </ul>
 </section>
 
 <section>
   <h2>Condiciones</h2>
   <ul>
-    <li>Cambios aplicados de forma controlada.</li>
+    <li>Cambios controlados y documentados.</li>
     <li>No incluye cambios funcionales del negocio.</li>
     <li>Soporte post-entrega incluido.</li>
   </ul>
@@ -221,8 +202,8 @@
 </main>
 
 <footer>
-  <p class="note-small">
-    Propuesta válida por 30 días. Valores sujetos a confirmación final.
+  <p style="font-size:12px; color:#666;">
+    Propuesta válida por 30 días.
   </p>
 </footer>
 
