@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Propuesta de Optimización de Bases de Datos – Auditoría y Rendimiento</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      --bg: #f7f7f5;
+      --paper: #ffffff;
+      --border: #d8d8d8;
+      --text-dark: #333333;
+      --text-muted: #666666;
+      --accent: #0a4fa3;
+      --accent2: #0f7ac4;
+      --radius-lg: 18px;
+      --shadow-soft: 0 4px 14px rgba(0,0,0,0.08);
+      --chip: #eef5ff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text-dark);
+      line-height: 1.6;
+      padding: 30px 12px;
+    }
+
+    .page {
+      max-width: 980px;
+      margin: 0 auto 40px;
+      background: var(--paper);
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-soft);
+      overflow: hidden;
+    }
+
+    .cover-page { display: flex; min-height: 420px; }
+    .cover-stripe { width: 90px; background: linear-gradient(180deg, var(--accent), var(--accent2)); }
+    .cover-main {
+      flex: 1;
+      padding: 44px 52px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .cover-title { font-size: 30px; font-weight: 700; margin-bottom: 6px; }
+    .cover-subtitle { font-size: 18px; font-weight: 600; margin-bottom: 18px; color:#222; }
+    .cover-meta { font-size: 14px; color: var(--text-muted); }
+    .cover-footer { font-size: 11px; color: #777; margin-top: 30px; }
+
+    header {
+      display: flex;
+      align-items: center;
+      padding: 26px 36px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    main { padding: 28px 38px; }
+
+    section {
+      margin-bottom: 22px;
+      padding: 20px 22px;
+      background: #fafafa;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+    }
+
+    h2 { font-size: 20px; margin-bottom: 10px; }
+    p, ul li { font-size: 14px; color: #444; }
+
+    ul { list-style: none; padding-left: 0; margin-top: 6px; }
+    ul li { padding-left: 16px; position: relative; margin-bottom: 6px; }
+    ul li::before { content: "•"; position: absolute; left: 4px; color: var(--accent2); }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      background: #fff;
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
+    table th, table td {
+      padding: 10px;
+      border: 1px solid var(--border);
+      font-size: 14px;
+    }
+
+    table th { background: #f0f0f0; }
+    .price { font-weight: 800; }
+
+    footer { padding: 0 38px 26px; }
+
+  </style>
+</head>
+
+<body>
+
+<!-- PORTADA -->
+<div class="page">
+  <div class="cover-page">
+    <div class="cover-stripe"></div>
+    <div class="cover-main">
+      <div class="cover-title">Propuesta de Optimización</div>
+      <div class="cover-subtitle">Bases de Datos Productivas SQL Server</div>
+
+      <p class="cover-meta"><strong>Bases:</strong> auditoria / paclab</p>
+      <p class="cover-meta"><strong>Proveedor:</strong> Consultoría TI – Bases de Datos</p>
+
+      <p class="cover-footer">Documento confidencial – Uso interno</p>
+    </div>
+  </div>
+</div>
+
+<!-- CONTENIDO -->
+<div class="page">
+
+<header>
+  <h1>Optimización y Estabilización de Bases Productivas</h1>
+</header>
+
+<main>
+
+<section>
+  <h2>Resumen Ejecutivo</h2>
+  <p>
+    Se propone avanzar con la <strong>optimización y estabilización</strong> de las bases
+    <strong>auditoria</strong> y <strong>paclab</strong>, actualmente en producción,
+    enfocándose en mejorar rendimiento, estabilidad y consumo de recursos.
+  </p>
+</section>
+
+<section>
+  <h2>Objetivo del Servicio</h2>
+  <ul>
+    <li>Reducir tiempos de respuesta de consultas críticas.</li>
+    <li>Optimizar consumo de CPU, memoria e I/O.</li>
+    <li>Eliminar cuellos de botella por índices y queries.</li>
+    <li>Mejorar la estabilidad operativa.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Alcance del Trabajo</h2>
+  <ul>
+    <li>Optimización de consultas críticas.</li>
+    <li>Ajuste y creación de índices estratégicos.</li>
+    <li>Eliminación de índices redundantes.</li>
+    <li>Ajustes de configuración seguros en entorno productivo.</li>
+    <li>Validación de mejoras aplicadas.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Entregables</h2>
+  <ul>
+    <li>Queries optimizadas.</li>
+    <li>Listado de índices creados o ajustados.</li>
+    <li>Comparativa de métricas antes / después.</li>
+    <li>Recomendaciones de mantenimiento.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Presupuesto</h2>
+  <table>
+    <tr>
+      <th>Base de Datos</th>
+      <th>Servicio</th>
+      <th>Inversión</th>
+    </tr>
+    <tr>
+      <td><strong>auditoria</strong></td>
+      <td>Optimización de queries e índices productivos</td>
+      <td class="price">USD 400</td>
+    </tr>
+    <tr>
+      <td><strong>paclab</strong></td>
+      <td>Optimización de queries e índices productivos</td>
+      <td class="price">USD 400</td>
+    </tr>
+    <tr>
+      <th colspan="2">Total General</th>
+      <th class="price">USD 800</th>
+    </tr>
+  </table>
+</section>
+
+<section>
+  <h2>Plazos</h2>
+  <ul>
+    <li>Duración estimada: <strong>2 días hábiles</strong>.</li>
+    <li>Implementación sin interrupción del servicio.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Condiciones</h2>
+  <ul>
+    <li>Cambios aplicados de forma controlada.</li>
+    <li>No incluye cambios funcionales del negocio.</li>
+    <li>Soporte post-entrega incluido.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Firmas</h2>
+  <p>Cliente: ________________________</p>
+  <p>Proveedor: ______________________</p>
+</section>
+
+</main>
+
+<footer>
+  <p class="note-small">
+    Propuesta válida por 30 días. Valores sujetos a confirmación final.
+  </p>
+</footer>
+
+</div>
+
+</body>
+</html>
